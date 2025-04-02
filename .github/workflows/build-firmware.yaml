@@ -156,9 +156,9 @@ jobs:
             folder: config/boards/hellen/hellen128
             ini-file: fome_hellen128.ini
 
-          # - build-target: hellen121vag
-          #   folder: config/boards/hellen/hellen121vag
-          #   ini-file: fome_hellen121vag.ini
+           - build-target: KRC_ECU_FOME
+             folder: config/boards/KRC_ECU_FOME
+             ini-file: fome_krc_ecu.ini
 
           # - build-target: hellen121nissan
           #   folder: config/boards/hellen/hellen121nissan
