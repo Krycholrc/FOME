@@ -276,8 +276,8 @@ jobs:
 
     - name: Install required packages
       run: |
-      sudo apt update
-      sudo apt install -y libusb-1.0-0-dev
+        sudo apt update
+        sudo apt install -y libusb-1.0-0-dev
 
     - name: Generate Live Documentation
       working-directory: ./firmware/
