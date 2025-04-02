@@ -274,6 +274,11 @@ jobs:
     #     sudo apt-get install zip
     #     sudo apt-get install dosfstools
 
+    - name: Install required packages
+      run: |
+      sudo apt update
+      sudo apt install -y libusb-1.0-0-dev
+
     - name: Generate Live Documentation
       working-directory: ./firmware/
       run: ./gen_live_documentation.sh
