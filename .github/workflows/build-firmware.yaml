@@ -27,6 +27,11 @@ jobs:
       working-directory: ./firmware/ext/openblt/Host/Source/LibOpenBLT/build
       run: cmake -DCMAKE_BUILD_TYPE=Release ..
 
+    - name: Install required packages
+      run: |
+        sudo apt update
+        sudo apt install -y libusb-1.0-0-dev
+
     - name: make libopenblt
       working-directory: ./firmware/ext/openblt/Host/Source/LibOpenBLT/build
       run: make -j8
@@ -273,11 +278,6 @@ jobs:
     #     sudo apt-get install gcc-multilib g++-multilib g++-mingw-w64 gcc-mingw-w64 sshpass mtools
     #     sudo apt-get install zip
     #     sudo apt-get install dosfstools
-
-    - name: Install required packages
-      run: |
-        sudo apt update
-        sudo apt install -y libusb-1.0-0-dev
 
     - name: Generate Live Documentation
       working-directory: ./firmware/
