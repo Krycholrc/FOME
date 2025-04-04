@@ -1,7 +1,7 @@
 # List of all the board related files.
 BOARDCPPSRC =  $(BOARD_DIR)/board_configuration.cpp
 
-SHORT_BOARD_NAME = KRC_ECU_FOME
+SHORT_BOARD_NAME = KRC_ECU_F407
 
 # Override DEFAULT_ENGINE_TYPE
 DDEFS += -DFIRMWARE_ID=\"KRC_ECU_F407\"
